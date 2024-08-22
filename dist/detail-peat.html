@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Peat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+
+<body class="relative">
+  <div class="fixed bottom-0 right-0 p-4 z-20">
+    <div class="flex items-center">
+      <a href="https://wa.me/+6285271123457" target="_blank"
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg">
+        Whatsapp Now!
+      </a>
+      <img src="images/WhatsApp.png" alt="">
+    </div>
+  </div>
+
+  <section class="section-1-3 w-full md:h-[1024px] relative" id="head">
+    <div class="absolute top-28 right-14 p-4">
+      <img class="dots" src="svg/dots.svg" alt="">
+    </div>
+    <div class="absolute bottom-0 right-0 hidden z-10 md:block">
+      <div class="bg-gradient-to-l from-[#FAFAFA] to-[#4C2406] h-36 w-[800px]"></div>
+    </div>
+    <nav class="p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="flex items-center">
+          <img src="images/logo.png" alt="Logo" class="h-10 mr-2">
+        </a>
+        <div class="md:hidden">
+          <button id="hamburger-btn" class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+        <div id="nav-menu" class="hidden md:flex md:items-center w-full md:w-auto">
+          <ul class="md:flex md:space-x-8 font-light">
+            <li><a href="index.html"
+                class="block py-2 md:py-0 text-white hover:text-sky-500 hover:scale-105 transition duration-200">Home</a>
+            </li>
+            <li><a href="index.html#about"
+                class="block py-2 md:py-0 text-white hover:text-sky-500 hover:scale-105 transition duration-200">About</a>
+            </li>
+            <li><a href="index.html#product"
+                class="block py-2 md:py-0 text-white hover:text-sky-500 hover:scale-105 transition duration-200">Product</a>
+            </li>
+            <li><a href="gallery.html"
+                class="block py-2 md:py-0 text-white hover:text-sky-500 hover:scale-105 transition duration-200">Gallery</a>
+            </li>
+            <li><a href="#contact"
+                class="block py-2 md:py-0 text-white hover:text-sky-500 hover:scale-105 transition duration-200">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Untuk tampilan desktop -->
+    <div class="hidden md:flex container mx-auto p-6 flex flex-col items-center justify-center h-full judul">
+      <div class="w-full flex">
+        <div class="w-1/4"></div> <!-- Div kosong untuk memberikan ruang di kiri -->
+        <div class="w-3/4 mb-10 lg:mb-0 lg:pr-10">
+          <h1 class="text-3xl lg:text-7xl font-semibold text-white mb-5">Coco Peat</h1>
+          <div class="flex items-center">
+            <p class="text-md font-light text-white mt-4 text-justify">
+              Coco Peat, also known as coir pith or coconut peat, is a natural byproduct of coconut husks, specifically
+              designed to serve as an effective growing medium. As an eco-friendly alternative to traditional peat moss,
+              Coco Peat boasts excellent water retention, aeration, and drainage properties, making it an ideal choice
+              for gardening, horticulture, and hydroponics.
+            </p>
+            <img src="images/coco.png" class="hidden md:block w-64 h-64 ml-4" alt="">
+          </div>
+          <div class="flex mt-4">
+            <div class="w-1/2 hidden md:block"></div> <!-- Div kosong untuk memberikan ruang di kiri -->
+            <div class="w-full md:w-1/2">
+              <p class="text-md font-light text-white text-justify">
+                It not only promotes healthy root growth by maintaining a balanced moisture level but also improves soil
+                structure, leading to more productive plants. Coco Peat is also naturally resistant to pests and
+                diseases, providing an organic and sustainable solution for your growing needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Untuk tampilan mobile -->
+    <div class="md:hidden container mx-auto p-6 flex flex-col items-center justify-center h-full judul">
+      <div class="w-full lg:w-1/4"></div>
+      <div class="w-full lg:w-3/4 mb-10 lg:mb-0 lg:pr-10">
+        <h1 class="text-3xl lg:text-7xl font-semibold text-white mb-5 text-center lg:text-left">Coco Peat</h1>
+        <div class="flex flex-col lg:flex-row items-center">
+          <p class="text-md font-light text-white mt-4 text-justify lg:w-2/3">
+            Coco Peat, also known as coir pith or coconut peat, is a natural byproduct of coconut husks, specifically
+              designed to serve as an effective growing medium. As an eco-friendly alternative to traditional peat moss,
+              Coco Peat boasts excellent water retention, aeration, and drainage properties, making it an ideal choice
+              for gardening, horticulture, and hydroponics.
+          </p>
+          <img src="images/coco.png" class="w-32 h-32 lg:w-64 lg:h-64 mt-4 lg:mt-0" alt="">
+        </div>
+        <div class="flex flex-col lg:flex-row">
+          <div class="w-full hidden md:block"></div>
+          <div class="w-full lg:w-1/2">
+            <p class="text-md font-light text-white mt-4 text-justify">
+              It not only promotes healthy root growth by maintaining a balanced moisture level but also improves soil
+                structure, leading to more productive plants. Coco Peat is also naturally resistant to pests and
+                diseases, providing an organic and sustainable solution for your growing needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-2-2 relative p-8" id="about">
+    <!-- Konten lain di sini -->
+    <div class="absolute bottom-10 right-10 w-20 h-auto hidden md:block">
+      <img src="svg/circles-v.svg" class="w-full h-full" alt="">
+    </div>
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row justify-center items-stretch md:space-x-8">
+        <div class="item-1 flex flex-col">
+          <img src="images/peat-1.png" class="object-scale-down" alt="">
+          <div class="text max-w-lg text-justify pb-20">
+            <h3 class="text-2xl font-semibold text-left mt-8 mb-4 text-slate-500">Product Detail</h3>
+            <o class="list-outside text-lg text-gray-600 mt-4">
+              <li>Minumum order 40 Tons</li>
+              <li>Monthly Production 120 Tons</li>
+              <li>Water Content 15% - 30%</li>
+              <li>PH Product 4.6 - 4.8</li>
+            </o>
+          </div>
+        </div>
+        <img src="images/peat-2.png" class="object-scale-down max-w-full md:max-w-md lg:max-w-lg" alt="">
+        <div class="text max-w-lg text-justify pb-20">
+          <h3 class="text-6xl font-semibold text-center mt-8 text-slate-500">Our Coco Peat</h3>
+          <p class="text-lg text-gray-600 mt-4">
+            Is carefully processed to ensure it meets the highest standards of quality and consistency. Whether you're a professional grower or a gardening enthusiast, our Coco Peat is the perfect medium to enhance your plant's growth and yield.
+          </p>
+        </div>
+      </div>
+      <p class="text-gray-600">You can order it by contacting the following email: <a href="mailto:kianbuanajaya@gmail.com" class="text-blue-500">kianbuanajaya@gmail.com</a></p>
+    </div>
+    
+    <hr class="border-t-2 border-slate-200 rounded ml-0 w-36 mx-auto lg:w-full mt-8">
+  </section>
+
+
+
+  <footer class="bg-white py-16" id="contact">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-semibold p-4 text-yellow-300">PT. Kian <span class="text-sky-500">Buana Jaya</span></h1>
+      <div class="flex  justify-between">
+        <div class="c-1">
+          <div class="flex mb-2">
+            <img src="svg/Location.svg" alt="">
+            <p class="text-gray-500 text-sm ml-2">Tuah Karya, Tampan, Pekanbaru City, Riau 28293</p>
+          </div>
+          <div class="flex mb-2">
+            <img src="svg/Mail.svg" alt="">
+            <a href="mailto:kianbuanajaya@gmail.com" class="text-gray-500 text-sm ml-2">kianbuanajaya@gmail.com</a>
+          </div>
+          <div class="flex">
+            <img src="svg/Phone.svg" alt="">
+            <a href="https://wa.me/+6285271123457" target="_blank" class="text-gray-500 text-sm ml-2">+6285271123457</a>
+          </div>
+        </div>
+        <div class="c-2 hidden md:block">
+          <p class="text-gray-500 text-sm">We are committed to providing the highest quality cocopeat and coco fiber
+            products with excellent customer service.
+            <br>
+            Natural products, maximum results. Our services are ready to assist you.</p>
+        </div>
+        <div class="c-3 mb-72">
+          <h3>Explore Our Page</h3>
+          <a class="text-gray-500 hover:text-gray-700 hover:scale-105 transition duration-200"
+            href="index.html">Home</a><br>
+          <a class="text-gray-500 hover:text-gray-700 hover:scale-105 transition duration-200"
+            href="index.html#about">About</a><br>
+          <a class="text-gray-500 hover:text-gray-700 hover:scale-105 transition duration-200"
+            href="index.html#product">Product</a><br>
+          <a class="text-gray-500 hover:text-gray-700 hover:scale-105 transition duration-200"
+            href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('hamburger-btn').addEventListener('click', function () {
+      const navMenu = document.getElementById('nav-menu');
+      navMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>

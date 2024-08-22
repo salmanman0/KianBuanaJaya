@@ -1,89 +1,263 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en" class="scroll-smooth">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.13.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.13.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.13.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.13.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.13.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.13.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.13.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.13.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.13.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.13.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kian Buana Jaya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.png">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+</head>
+
+<body class="relative">
+  <div class="fixed bottom-0 right-0 p-4">
+    <div class="flex items-center">
+      <a href="https://wa.me/+6285271123457" target="_blank"
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg">
+        Whatsapp Now!
+      </a>
+      <img src="images/WhatsApp.png" alt="">
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </div>
+  <section class="section-1 w-full md:h-[1024px]" id="home">
+    <nav class="p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="flex items-center">
+          <img src="images/logo.png" alt="Logo" class="h-10 mr-2">
+        </a>
+        <div class="md:hidden">
+          <button id="hamburger-btn" class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+        <div id="nav-menu" class="hidden md:flex md:items-center w-full md:w-auto">
+          <ul class="md:flex md:space-x-8 font-light">
+            <li><a href="index.html"
+                class="block py-2 md:py-0 text-white hover:text-sky-500 hover:scale-105 transition duration-200">Home</a>
+            </li>
+            <li><a href="index.html#about"
+                class="block py-2 md:py-0 text-white hover:text-sky-500 hover:scale-105 transition duration-200">About</a>
+            </li>
+            <li><a href="index.html#product"
+                class="block py-2 md:py-0 text-white hover:text-sky-500 hover:scale-105 transition duration-200">Product</a>
+            </li>
+            <li><a href="gallery.html"
+                class="block py-2 md:py-0 text-white hover:text-sky-500 hover:scale-105 transition duration-200">Gallery</a>
+            </li>
+            <li><a href="index.html#contact"
+                class="block py-2 md:py-0 text-white hover:text-sky-500 hover:scale-105 transition duration-200">Contact</a>
+            </li>
+          </ul>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        </div>
+      </div>
+    </nav>
+    <div class="container mx-auto p-6 flex flex-col items-center justify-center h-full judul">
+      <div class="w-full mb-10 lg:mb-0 lg:pr-10">
+        <h1 class="text-3xl lg:text-7xl font-semibold text-white mb-5">Sustainable and green a healthier scene.</h1>
+        <a href="mailto:kianbuanajaya@gmail.com" target="_blank"
+          class="bg-sky-500 text-white py-3 px-6 rounded-lg font-medium hover:bg-sky-700 transition-transform duration-300 transform hover:scale-110">Contact</a>
+      </div>
+    </div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+  </section>
+  <section class="section-2 relative p-8" id="about">
+    <div class="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-yellow-400 to-yellow-50"></div>
+    <!-- Konten lain di sini -->
+    <div class="absolute top-10 right-10 w-20 h-auto hidden md:block">
+      <img src="svg/circles-v.svg" class="w-full h-full" alt="">
+    </div>
+    <div class="absolute bottom-5 left-1/2 h-20 w-auto hidden md:block z-10">
+      <img src="svg/circles-h.svg" class="w-full h-full" alt="">
+    </div>
+    <div class="absolute bottom-5 right-0 h-0 w-auto hidden md:block">
+      <img src="images/coco-fiber.png" class="w-full h-full" alt="">
+    </div>
+    <div class="container mx-auto">
+      <div class="title-2 flex items-center mb-8">
+        <h1 class="text-4xl font-semibold p-4 text-sky-500">About <span class="text-yellow-300">Us</span></h1>
+        <div class="line">
+          <hr class="border-t-4 border-slate-400 rounded my-2 ml-0 w-14 mx-auto lg:w-28">
+          <hr class="border-t-4 border-slate-400 rounded my-2 ml-0 w-36 mx-auto lg:w-96">
+        </div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row justify-center items-strech md:space-x-8">
+        <img src="images/coco-peat.png" class="object-scale-down" alt="">
+        <div class="text max-w-lg text-justify pb-20">
+          <h3 class="text-2xl font-bold text-center mt-8">Kian Buana Jaya</h3>
+          <p class="text-lg text-gray-600 mt-4 ">
+            PT. Kian Buana Jaya is a company rooted in Indonesia, a fertile land rich in natural resources. Founded by
+            Riki Piliano, we share a vision of creating sustainable agricultural solutions. Utilizing the potential of
+            coconut coir, we produce high-quality cocopeat and coco fiber that have been recognized by farmers
+            worldwide.
+          </p>
+          <p class="text-lg text-gray-600 mt-4">
+            We believe that sustainable agriculture is the key to a better future. Therefore, we are committed to
+            producing environmentally friendly products and supporting the welfare of farmers. Through partnerships with
+            local farmers, we not only provide quality products but also contribute to the economic development of the
+            community.
+          </p>
+        </div>
+      </div>
+
+      <div class="visi-misi relative z-20 w-3/4">
+        <h1 class="text-3xl font-semibold text-left text-sky-500 mb-4">VISI</h1>
+        <p class="text-lg text-gray-600 text-justify mb-10">
+          To become a global leader in the export of high-quality, sustainable cocopeat and coco fiber, meeting the demands of the European and Northern Asian markets while contributing to Indonesia's economic growth.
+        </p>
+        <h2 class="text-3xl font-semibold text-left text-sky-500 mb-4">MISI</h2>
+        <ul class="list-disc pl-5 text-lg text-gray-600 text-justify mb-10">
+          <li><b>Deliver High-Quality Products </b>To produce and export premium cocopeat and coco fiber that meet international standards, focusing on sustainability and innovation.</li>
+          <li><b>Commit to Sustainability </b>To implement eco-friendly and sustainable production practices, preserving ecosystems, and supporting local farmers in resource management.</li>
+          <li><b>Enhance Global Competitiveness </b>To build a strong distribution network in the European and Northern Asian markets, continuously expanding market reach through strategic partnerships and improved service quality.</li>
+        </ul>
+
+        <div class="text-left my-8">
+          <a href="/public/docs/CompanyProfile-KianBuanaJaya.pdf" target="_blank" class="bg-sky-500 text-white font-normal py-2 px-4 rounded hover:bg-sky-600 z-20">
+            Deed of Incorporation
+          </a>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+
+
+  <section class="section-3 bg-yellow-400 py-4" id="product">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-semibold p-4 text-slate-600">Our <span class="text-white">Products</span></h1>
+      <div class="md:grid md:grid-cols-4 gap-6">
+        <!-- Gambar besar -->
+        <div class="col-span-1 relative flex items-center justify-center ">
+          <!-- Thumbnail image -->
+          <img src="images/p-1.png" class="rounded w-full drop-shadow-md " alt="">
+
+          <!-- Play button overlay -->
+          <a href="detail-fiber.html#head"
+            class="absolute inset-0 flex justify-center items-center text-white rounded-md ">
+            <span class="outline outline-offset-2 outline-sky-500 rounded px-4 py-2 hover:bg-sky-700 hover:scale-105 transition duration-200 font-light">See Detail</span>
+          </a>
+        </div>
+
+        <!-- Box Coco Fiber dan gambar kecil -->
+        <div class="col-span-1 flex flex-col space-y-4">
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h2 class="text-lg font-semibold text-gray-800 mb-4">Coco Fiber</h2>
+            <ul class="text-gray-700 space-y-2">
+              <li><strong>Minimum Order:</strong> <br><span class="font-semibold">40 Tons</span></li>
+              <li><strong>Monthly Production:</strong> <br><span class="font-semibold">120 Tons</span></li>
+              <li><strong>Water Content:</strong> <br><span class="font-semibold">15%-30%</span></li>
+              <li><strong>PH Product:</strong> <br><span class="font-semibold">4.6 - 4.8</span></li>
+            </ul>
+          </div>
+          <img src="images/p-2.png" class="rounded w-full drop-shadow-md" alt="">
+        </div>
+        <!-- Paragraf deskripsi -->
+        <div class="col-span-1 flex items-center">
+          <div>
+            <p class="text-white text-pretty">At the heart of our offerings lie two exceptional products Coco Fiber and
+              Coco Peat crafted from nature's finest resources. These sustainable solutions not only enhance the quality
+              of your projects but also contribute to a greener planet. Discover how our premium products can bring
+              durability, efficiency, and eco-friendliness to your world.</p>
+            <hr class="border-t-2 border-white rounded my-2 ml-0 w-16 mx-auto lg:w-72">
+          </div>
+        </div>
+        <!-- Box Coco Peat dan gambar kecil -->
+        <div class="col-span-1 flex flex-col space-y-4">
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h2 class="text-xl font-bold mb-4">Coco Peat</h2>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <p class="font-bold">Minimum Order:</p>
+                <p>40 Tons</p>
+              </div>
+              <div>
+                <p class="font-bold">Water Content:</p>
+                <p>15%-30%</p>
+              </div>
+              <div>
+                <p class="font-bold">Monthly Production:</p>
+                <p>120 Tons</p>
+              </div>
+              <div>
+                <p class="font-bold">PH Product:</p>
+                <p>4.6-4.8</p>
+              </div>
+            </div>
+          </div>
+   
+          <div class=" relative flex items-center justify-center ">
+            <!-- Thumbnail image -->
+            <img src="images/p-3.png" class="rounded w-full drop-shadow-md " alt="">
+  
+            <!-- Play button overlay -->
+            <a href="detail-peat.html#head"
+              class="absolute inset-0 flex justify-center items-center text-white font-light rounded-md ">
+              <span class="outline outline-offset-2 outline-sky-500 rounded px-4 py-2 hover:bg-sky-700 hover:scale-105 transition duration-200">See Detail</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="bg-white py-16" id="contact">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-semibold p-4 text-yellow-300">PT. Kian <span class="text-sky-500">Buana Jaya</span></h1>
+      <div class="flex  justify-between">
+        <div class="c-1">
+          <div class="flex mb-2">
+            <img src="svg/Location.svg" alt="">
+            <p class="text-gray-500 text-sm ml-2">Tuah Karya, Tampan, Pekanbaru City, Riau 28293</p>
+          </div>
+          <div class="flex mb-2">
+            <img src="svg/Mail.svg" alt="">
+            <a href="mailto:kianbuanajaya@gmail.com" class="text-gray-500 text-sm ml-2">kianbuanajaya@gmail.com</a>
+          </div>
+          <div class="flex">
+            <img src="svg/Phone.svg" alt="">
+            <a href="https://wa.me/+6285271123457" target="_blank" class="text-gray-500 text-sm ml-2">+6285271123457</a>
+          </div>
+        </div>
+        <div class="c-2 hidden md:block">
+          <p class="text-gray-500 text-sm">We are committed to providing the highest quality cocopeat and coco fiber
+            products with excellent customer service.
+            <br>
+            Natural products, maximum results. Our services are ready to assist you.</p>
+        </div>
+        <div class="c-3 mb-72">
+          <h3>Explore Our Page</h3>
+          <a class="text-gray-500 hover:text-gray-700 hover:scale-105 transition duration-200"
+            href="index.html">Home</a><br>
+          <a class="text-gray-500 hover:text-gray-700 hover:scale-105 transition duration-200"
+            href="#about">About</a><br>
+          <a class="text-gray-500 hover:text-gray-700 hover:scale-105 transition duration-200"
+            href="#product">Product</a><br>
+          <a class="text-gray-500 hover:text-gray-700 hover:scale-105 transition duration-200"
+            href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('hamburger-btn').addEventListener('click', function () {
+      const navMenu = document.getElementById('nav-menu');
+      navMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
 </html>
